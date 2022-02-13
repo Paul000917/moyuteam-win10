@@ -9,9 +9,7 @@ const ThemeColorReplacer = require('webpack-theme-color-replacer')
 const forElementUI = require('webpack-theme-color-replacer/forElementUI')
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/moyuteam-win10'
-    : '/moyuteam-win10/',
+  publicPath: process.env.NODE_ENV === 'production'? '/moyuteam-win10': '/',
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: false,
