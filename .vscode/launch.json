@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "justMyCode": false,
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "vuejs: chrome",
+      "url": "http://localhost:9091/vue-win10/",
+      "webRoot": "${workspaceFolder}/src",
+      "breakOnLoad": true,
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      },
+    },
+    {
+      "type": "firefox",
+      "request": "launch",
+      "name": "vuejs: firefox",
+      "url": "http://localhost:9091/vue-win10/ ",
+      "webRoot": "${workspaceFolder}/src",
+      "pathMappings": [{ "url": "webpack:///src/", "path": "${webRoot}/" }]
+    }
+  ]
+}
